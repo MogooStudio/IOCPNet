@@ -124,6 +124,11 @@ namespace MGNet
 		}
         #endregion
 
+        /// <summary>
+        /// 分割字符数组
+        /// </summary>
+        /// <param name="bytesList"></param>
+        /// <returns></returns>
         public static byte[] SplitBytes(ref List<byte> bytesList)
         {
             byte[] buff = null;
@@ -142,6 +147,11 @@ namespace MGNet
             return buff;
         }
 
+        /// <summary>
+        /// 序列化消息
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
         public static byte[] Serialize(IOCPMsg msg)
         {
             byte[] data = null;
@@ -164,6 +174,11 @@ namespace MGNet
             return data;
         }
 
+        /// <summary>
+        /// 反序列化消息
+        /// </summary>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
         public static IOCPMsg DeSerialize(byte[] bytes)
         {
             IOCPMsg msg = null;
